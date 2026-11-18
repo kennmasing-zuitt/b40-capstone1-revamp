@@ -1,19 +1,16 @@
 ---
-name: AltMobility Philippines
+name: AltMobility Philippines (revamp)
 colors:
-  base: '#30506e'
+  baseblue: '#30506e'
+  basebluedark: '#223a50'
+  rightsblue: '#72a1b4'
+  rightsbluedark: '#3d6d80'
+  rightsbluelight: '#e8f1f5'
+  bodytext: '#43454a'
+  subtlebg: '#f8fafc'
+  bordercolor: '#e2e8f0'
   white: '#ffffff'
-  dark-gray: '#5c6b73'
-  text-gray: '#666666'
-  charcoal: '#43454a'
-  body-olive: '#5f7053'
-  rights-blue: '#72a1b4'
-  sidebar-accent: '#47748b'
-  sidebar-hover: '#7386d5'
-  button-border: 'rgba(148, 148, 148, 0.5)'
-  overlay: 'rgba(0, 0, 0, 0.7)'
-  line-pnr: orange
-  line-subway: gray
+  line-pnr: '#f97316'
   line-lrt1: '#fff23b'
   line-lrt2: '#924ac2'
   line-mrt3: '#3f94fc'
@@ -28,169 +25,216 @@ colors:
 typography:
   display-hero:
     fontFamily: Oswald
-    fontSize: 112px
-    fontWeight: '500'
-    lineHeight: 134px
+    fontSize: 128px
+    fontWeight: '700'
+    lineHeight: 128px
+    letterSpacing: '-3.2px'
   display-hero-mobile:
     fontFamily: Oswald
-    fontSize: 40px
-    fontWeight: '500'
+    fontSize: 48px
+    fontWeight: '700'
     lineHeight: 48px
+    letterSpacing: '-1.2px'
   hero-sub:
     fontFamily: Saira Extra Condensed
-    fontSize: 48px
-    fontWeight: '400'
-    lineHeight: 72px
+    fontSize: 30px
+    fontWeight: '500'
+    lineHeight: 36px
+    letterSpacing: 6.6px
   hero-sub-mobile:
     fontFamily: Saira Extra Condensed
-    fontSize: 19px
-    fontWeight: '400'
-    lineHeight: 29px
+    fontSize: 20px
+    fontWeight: '500'
+    lineHeight: 28px
+    letterSpacing: 4.4px
   section-title:
     fontFamily: Oswald
-    fontSize: 40px
+    fontSize: 48px
     fontWeight: '700'
-    lineHeight: 60px
+    lineHeight: 48px
+    letterSpacing: '-1.2px'
   section-title-mobile:
     fontFamily: Oswald
-    fontSize: 28px
+    fontSize: 30px
     fontWeight: '700'
-    lineHeight: 42px
-  headline-md:
+    lineHeight: 36px
+    letterSpacing: '-0.75px'
+  quote:
     fontFamily: Oswald
-    fontSize: 32px
-    fontWeight: '500'
-    lineHeight: 38px
+    fontSize: 48px
+    fontWeight: '700'
+    lineHeight: 48px
+  quote-mobile:
+    fontFamily: Oswald
+    fontSize: 30px
+    fontWeight: '700'
+    lineHeight: 37.5px
   card-title:
     fontFamily: Oswald
     fontSize: 24px
-    fontWeight: '500'
-    lineHeight: 50px
-  card-title-sm:
+    fontWeight: '700'
+    lineHeight: 32px
+    letterSpacing: 0.6px
+  line-name:
     fontFamily: Oswald
     fontSize: 20px
     fontWeight: '700'
-    lineHeight: 24px
-  quote:
-    fontFamily: Arial
-    fontSize: 40px
+    lineHeight: 28px
+  stat-number:
+    fontFamily: Oswald
+    fontSize: 30px
     fontWeight: '700'
-    lineHeight: 48px
-  subhead-condensed:
+    lineHeight: 36px
+  eyebrow:
     fontFamily: Saira Extra Condensed
-    fontSize: 24px
-    fontWeight: '400'
-    lineHeight: 29px
-  list-heading:
-    fontFamily: Arial Narrow
-    fontSize: 28px
+    fontSize: 30px
     fontWeight: '700'
-    lineHeight: 34px
+    lineHeight: 36px
+    letterSpacing: 3px
+  nav-link:
+    fontFamily: Saira Extra Condensed
+    fontSize: 18px
+    fontWeight: '600'
+    lineHeight: 28px
+    letterSpacing: 0.9px
+  button-label:
+    fontFamily: Saira Extra Condensed
+    fontSize: 20px
+    fontWeight: '700'
+    lineHeight: 28px
+    letterSpacing: 1px
+  body-lg:
+    fontFamily: Inter
+    fontSize: 18px
+    fontWeight: '400'
+    lineHeight: 28px
   body-md:
-    fontFamily: Arial
+    fontFamily: Inter
     fontSize: 16px
     fontWeight: '400'
     lineHeight: 24px
   body-sm:
-    fontFamily: Arial
-    fontSize: 14.4px
+    fontFamily: Inter
+    fontSize: 14px
     fontWeight: '400'
-    lineHeight: 21.6px
-  nav-link:
-    fontFamily: Calibri
-    fontSize: 16px
-    fontWeight: '400'
-    lineHeight: 24px
+    lineHeight: 20px
+  label:
+    fontFamily: Inter
+    fontSize: 12px
+    fontWeight: '700'
+    lineHeight: 16px
+    letterSpacing: 0.6px
 rounded:
-  DEFAULT: 0.25rem
-  button: 5px
-  full: 50rem
+  logo-box: 8px
+  card-sm: 12px
+  card: 16px
+  panel: 24px
+  pill: 9999px
 spacing:
-  section-height: 100vh
-  card-gap: 0.5rem
-  breakpoint-small-phone: 411px
-  breakpoint-phone: 576px
-  breakpoint-small-tablet: 767px
-  breakpoint-tablet: 991px
-  breakpoint-desktop: 992px
+  container-max: 1280px
+  header-height: 80px
+  section-padding-y: 80px
+  section-padding-y-lg: 112px
+  breakpoint-sm: 640px
+  breakpoint-md: 768px
+  breakpoint-lg: 1024px
+  breakpoint-xl: 1280px
 ---
-
-> **Superseded (2026-11-18):** this describes the Bootstrap 4 page from the P2 commit. On branch `p3-stitch-redesign` the page was replaced by a Google Stitch redesign built with Tailwind (tokens in `tailwind.config.js`). A new DESIGN.md for that page is still to be written.
 
 ## Brand & Style
 
-AltMobility Philippines is a one-page advocacy site for commuters' rights in Metro Manila. It speaks to daily commuters, voters ahead of Halalan 2022 and anyone who walks, bikes or takes the train. The tone is civic and urgent but hopeful: big campaign headlines (`#COMMUTERSNAMAN`), plain facts about rail lines and street design, and clear calls to sign up and vote.
+AltMobility Philippines is a one-page advocacy site for commuters' rights in Metro Manila (`#COMMUTERSNAMAN`). This file describes the revamp: a Google Stitch redesign of Capstone 1, built with Tailwind CSS. The Bootstrap 4 version it replaced is documented in `docs/DESIGN-v1-bootstrap.md` (superseded).
 
-The look is a **campaign poster on a calm blue base**:
-- **Full-screen photo sections** (EDSA traffic, commuters, the contact backdrop) set the mood behind white display type.
-- **White content sections** carry the facts: the Bill of Rights cards, the rail-line cards and the NACTO street comparison.
-- **Condensed type everywhere**: Oswald for headlines, Saira Extra Condensed for spaced-out subheads (`J O I N   T H E   C O N V E R S A T I O N`).
+The look is still a **campaign poster on a calm blue base**, now cleaner and card-based:
+- **Photo bands** (hero, Halalan, contact) put white type over a photo with a Base Blue Dark gradient.
+- **Light content sections** (Bill of Rights, rail network, NACTO) use white or near-white backgrounds with bordered, rounded cards.
+- **Condensed type**: Oswald for headlines and numbers, letter-spaced Saira Extra Condensed for eyebrows, navigation and buttons, Inter for body copy and form labels.
 
 ## Colors
 
-- **Base Blue (`#30506e`):** Page background, desktop navbar, mobile sidebar and footers. The single brand colour; every dark band on the page uses it.
-- **White (`#ffffff`):** Display type over photos, text on blue, and the background of the fact sections.
-- **Rights Blue (`#72a1b4`):** Fill of the five Commuter's Bill of Rights cards, with white text. It only reaches 2.81:1 contrast with white, which is below WCAG AA; fix it before relying on it for body text.
-- **Text Gray (`#666666`) and Charcoal (`#43454a`):** Headings inside white sections: gray for section titles and rail-network headings, charcoal for rail-line and NACTO card titles.
-- **Body Olive (`#5f7053`) and Dark Gray (`#5c6b73`):** Body copy in the white sections and default link colour.
-- **Sidebar Accent (`#47748b`) and Sidebar Hover (`#7386d5`):** Mobile sidebar list rules and the close-button hover.
-- **Rail line colours (`--line-*`):** Each line card has a 5px left marker in that line's official colour, for example LRT-1 yellow `#fff23b`, LRT-2 purple `#924ac2` and MRT-3 blue `#3f94fc`. They identify lines only; don't reuse them for UI.
-- **Overlay (`rgba(0, 0, 0, 0.7)`):** Dims the page while the mobile sidebar is open.
+All brand colours are Tailwind theme colours in `tailwind.config.js` (`theme.extend.colors`) and are used as classes such as `bg-baseblue` or `text-rightsbluedark`. Use those names instead of hex values.
 
-All colours live as custom properties in the `:root` block of `index.css` (`--color-*` and `--line-*`). Use the variable, not the hex, when adding rules.
+- **Base Blue (`#30506e`):** header, headings in light sections, primary buttons, Bill of Rights icon tiles.
+- **Base Blue Dark (`#223a50`):** section backgrounds behind photos, photo overlays, the mobile menu and dark button text on white buttons.
+- **Rights Blue (`#72a1b4`):** large accents on dark backgrounds (the `FEATURED ARTICLE` eyebrow and `2022`), hover states and the focus outline. Don't use it for small text on blue: it reaches only 2.99:1 on Base Blue and 4.18:1 on Base Blue Dark.
+- **Rights Blue Dark (`#3d6d80`):** the darker accent for text on white and the fill of the secondary buttons (`READ MORE`, `SUBMIT`) with white text (5.68:1).
+- **Rights Blue Light (`#e8f1f5`):** small accent text on dark backgrounds (the footer tagline 7.34:1, the contact email link 10.25:1) and pale tinted backgrounds.
+- **Body Text (`#43454a`):** body copy on white (9.59:1).
+- **Subtle BG (`#f8fafc`) and Border (`#e2e8f0`):** rail line cards, form fields and card borders.
+- **Rail line colours (`line-*`):** a 10px marker on the left edge of each line card, set inline with `style="background-color: …"`. They identify lines only; don't reuse them for UI. PNR uses Tailwind's orange (`#f97316`).
+- **Tailwind default greys and greens** are also used directly: slate for the NACTO stat labels and bars, emerald for the bike-lane figure and bar, red for the required-field asterisks.
+
+**Contrast:** all text pairings measured in the browser pass WCAG AA (4.5:1 for normal text). The large Rights Blue eyebrow and `2022` on Base Blue Dark (4.18:1) pass the 3:1 rule for large text. White on Rights Blue is 2.81:1, so Rights Blue is never a fill behind white text.
 
 ## Typography
 
-- **Display & Section Titles (Oswald):** The hero headline at 112px (40px on phones), section titles at 40px bold (28px on phones) and card titles. Mostly uppercase in the markup.
-- **Condensed Subheads (Saira Extra Condensed):** Letter-spaced hero subtitles, the `2 0 2 2` Halalan year and contact subheads. The spacing is typed into the text, so keep it when editing copy.
-- **Body (Arial):** Descriptions, card text and the featured quote (40px bold on desktop).
-- **List Headings (Arial Narrow):** "EXISTING LINES"-style headings in the rail section.
-- **Navigation (Calibri):** Desktop navbar links. Bootstrap's system font covers forms, buttons and small print.
+- **Display (Oswald 700, uppercase):** hero headline 128px (48px on phones), section titles 48px (30px on phones), the Halalan quote 48px (30px on phones).
+- **Card titles and numbers (Oswald 700):** card titles 24px, rail line names 20px, NACTO figures 30px (the Transitway figure is 36px on desktop).
+- **Saira Extra Condensed (uppercase, letter-spaced):** the hero subtitle 30px with 6.6px tracking, eyebrows 24–30px, navigation 18px, buttons 16–24px. Unlike the old site, the spacing comes from `letter-spacing`, not from spaces typed into the text.
+- **Inter:** body 16–18px, small copy 14px, form labels 12px bold uppercase.
 
-Fonts load from Google Fonts in one request (`Oswald` and `Saira Extra Condensed`, `display=swap`). Arial, Arial Narrow and Calibri are system fonts.
+Fonts load from Google Fonts in one request (Inter 400–700, Oswald 500–700, Saira Extra Condensed 500–800, `display=swap`).
 
 ## Layout & Spacing
 
-- **Sections fill the screen:** each section is `100vh` on desktop, and some mobile sections use fixed `170vh`–`180vh` heights to fit their content.
-- **Bootstrap 4 grid:** cards are Bootstrap `card` elements in rows (`col-5 col-lg`), wrapping two per row on phones.
-- **Breakpoints:** `index.css` uses its own closed ranges: ≤411px, 412–576px, 577–767px, 768–991px and ≥992px. They don't match Bootstrap's breakpoints.
-- **Desktop and mobile copies:** the navbar, hero, Join Us, NACTO and footer sections exist twice in `index.html`, and CSS hides the copy that doesn't fit the screen. Edit both copies until they are merged.
+- **One markup for every screen size.** Tailwind's default breakpoints (`sm` 640px, `md` 768px, `lg` 1024px, `xl` 1280px) change the layout. The header shows the full navigation from `lg` up and a hamburger menu below it. The old duplicated desktop/mobile sections are gone.
+- **Container:** content sits in `max-w-7xl` (1280px), centred with 16–32px side padding.
+- **Sections:** 80px vertical padding, 112px from `lg` up (the Halalan band uses 96px/128px). Sections grow with their content; there are no fixed `vh` heights except the hero (`min-h-[90vh]`, full screen from `lg`).
+- **Grids:** Bill of Rights cards go from one column to two (`md`) and three (`lg`). NACTO cards go from one column to two (`sm`) and four (`lg`). The rail section, Halalan and contact use 12-column grids (7 + 5 columns) from `lg`.
 
 ## Elevation & Depth
 
-The site is flat. Depth comes from photography and the parallax background in the contact section, not from shadows. The only shadows are the navbar's `1px 1px 3px rgba(0, 0, 0, 0.1)` and the mobile sidebar's drop shadow. The sidebar slides in over a 70% black overlay.
+Depth comes mostly from photography and the gradient overlays. Cards use light Tailwind shadows (`shadow-sm`, rising to `shadow-md` on hover); the Halalan panel and the contact form card use `shadow-2xl`. The header has `shadow-md`. Two glass panels (newsletter box and Halalan panel) add `backdrop-blur-md`.
+
+Photo overlays:
+- **Hero:** a gradient from Base Blue Dark at 90% (bottom) through transparent to 60% (top).
+- **Halalan:** a left-to-right gradient, 85% → 40% → 60%, darker behind the quote.
+- **Contact:** a top-to-bottom gradient, 80% → 35% → 80%.
 
 ## Shapes
 
-- **Cards:** Bootstrap's default `0.25rem` corners.
-- **Buttons:** "Know more" buttons use `5px` corners with a `1px solid rgba(148, 148, 148, 0.5)` border on a transparent background.
-- **Pills:** the search field and the newsletter Submit button are fully rounded (Bootstrap `rounded-pill`) with a light outline.
+- **Logo boxes:** 8px corners (`rounded-lg`).
+- **Rail line cards and icon tiles:** 12px (`rounded-xl`).
+- **Bill of Rights and NACTO cards, newsletter box:** 16px (`rounded-2xl`).
+- **Halalan panel and contact form card:** 24px (`rounded-3xl`).
+- **Buttons, search fields, social icons and capacity bars:** fully rounded (`rounded-full`).
 
 ## Components
 
-### Desktop Navbar
-- Sticky Base Blue bar with the AltMobility logo on the left, centred Calibri links to each section, and a pill search field on the right.
+### Header
+- Sticky Base Blue bar, 80px tall, with the logo on the left, Saira navigation links and a pill search field. Links get a Rights Blue underline on hover. Below `lg`, a hamburger toggles a Base Blue Dark menu with the same links and search; tapping a link closes it.
 
-### Mobile Sidebar
-- A hamburger button opens a Base Blue sidebar from the left with the logo and the section links. Tapping a link or the dark overlay closes it.
+### Hero (`#home`)
+- Full-screen photo with gradient overlay, the `#COMMUTERSNAMAN` headline, the letter-spaced subtitle and two buttons: a white button (`GET IN TOUCH & TAKE ACTION`) and an outlined one (`EXPLORE THE BILL OF RIGHTS`). A bouncing "Scroll" cue sits at the bottom.
 
-### Hero
-- Full-screen photo with the `#COMMUTERSNAMAN` headline in Oswald and a spaced-out Saira subtitle.
+### Bill of Rights cards (`#billofrights`)
+- Five white cards (Safe, Reliable, Accessible, Comfortable, Sustainable). Each has its white icon on a 64px Base Blue tile, an Oswald title and Inter body text. The border turns Rights Blue on hover.
 
-### Bill of Rights Cards
-- Five Rights Blue cards (Safe, Reliable, Accessible, Comfortable, Sustainable), each with an icon, an Oswald title and white body text. They flip in on scroll (AOS `flip-left`).
+### Rail line cards (`#history`)
+- Subtle BG cards with the line colour marker on the left, the logo in a white bordered box and the line name. They are grouped under `EXISTING LINES` and `PROPOSED LINES` next to the rail network map.
 
-### Rail Line Cards
-- White cards with a coloured line marker (`--line-*`) before the line name and the line's logo below. Existing and future lines are grouped, next to the rail network map.
+### Halalan panel (`#joinus`)
+- Left: `FEATURED ARTICLE`, the quote with a Rights Blue left border and a Rights Blue Dark `READ MORE` button. Right: a glass panel with the fingerprint icon, `HALALAN`, `2022` and a white `MAGPA-REHISTRO, BUMOTO!` button.
 
-### Halalan Panel
-- A card over the Join Us photo: a fingerprint icon, `H A L A L A N` in Oswald, `2 0 2 2` in Saira and a "Magpa-rehistro, bumoto!" call to action.
+### NACTO comparison (`#nacto`)
+- Four white cards (Car lane, Bike lane, Sidewalk, Transitway), each with its GIF on a slate tile, the people-per-hour figure and a capacity bar whose width is the figure divided by 25,000 (Car lane 6.4%).
 
-### NACTO Comparison
-- Four animated GIFs (car lane, bike lane, sidewalk, transit) with Oswald captions and people-per-hour figures.
-
-### Contact
-- Newsletter signup, social icons (Font Awesome), contact details and a demo CAPTCHA over a parallax photo. The forms are demo content and don't submit anywhere.
+### Contact (`#contact`)
+- Left: newsletter glass box (Rights Blue Dark `SUBMIT` button), social icons for Facebook, Twitter and Instagram, and the business enquiries email. Right: a white form card (Name, Email, Affiliation, Message, a demo "I'm not a robot" checkbox and `SEND MESSAGE`). Every field has a visible label. The forms are demo content and don't submit anywhere.
 
 ### Footer
-- Base Blue band with the logo, a Contribute button, legal links and the copyright line.
+- Base Blue band with the logo, the `JOIN THE CONVERSATION` tagline, a white `CONTRIBUTE` button, legal links and the copyright line.
+
+## Links
+
+Navigation, hero buttons and footer links jump to sections on the page. Outside links open in a new tab (`target="_blank" rel="noopener"`) and keep the original site's targets: the Bill of Rights article (Rappler), the JICA Dream Plan video (YouTube), the featured article (`READ MORE`, Facebook) and the AltMobility Facebook, Twitter and Instagram pages.
+
+## Building the CSS
+
+`index.css` is generated; don't edit it by hand. Edit classes in `index.html` (or custom CSS in `tailwind.input.css`), then run:
+
+```
+npx -y tailwindcss@3.4.19 -i tailwind.input.css -o index.css --minify
+```
+
+Then update the cache-busting query in `index.html` (`index.css?v=<first 8 hex of sha256(index.css)>`).
