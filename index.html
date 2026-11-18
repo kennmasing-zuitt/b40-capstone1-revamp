@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AltMobility Philippines | #COMMUTERSNAMAN</title>
+<link rel="shortcut icon" type="image/png" href="favicon.ico"/>
+<!-- Google Fonts: Oswald (Headlines), Saira Extra Condensed (Subheads), Inter (Body) -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Oswald:wght@500;600;700&amp;family=Saira+Extra+Condensed:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="./index.css?v=d581dcc8" rel="stylesheet"/>
+</head>
+<body class="bg-white text-bodytext font-sans antialiased selection:bg-rightsblue selection:text-white">
+<!-- ==================== 1. STICKY NAVBAR ==================== -->
+<header class="sticky top-0 z-50 bg-baseblue shadow-md border-b border-basebluedark transition-all">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-20">
+<!-- Brand Logo -->
+<a aria-label="AltMobility Philippines Home" class="flex-shrink-0 flex items-center group py-2" href="#home">
+<img alt="AltMobility Philippines Logo" class="h-11 md:h-12 w-auto object-contain transition-transform group-hover:scale-105" src="https://res.cloudinary.com/kennmasing/image/upload/v1589304754/capstone1/altmobility2_j1errk.png"/>
+</a>
+<!-- Desktop Navigation & Search -->
+<nav aria-label="Main Navigation" class="hidden lg:flex items-center space-x-6 xl:space-x-8">
+<a class="font-saira text-lg tracking-wider text-white/90 hover:text-white font-semibold uppercase transition-colors relative py-1 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-rightsblue hover:after:w-full after:transition-all" href="#billofrights">
+            Commuter's Bill of Rights
+          </a>
+<a class="font-saira text-lg tracking-wider text-white/90 hover:text-white font-semibold uppercase transition-colors relative py-1 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-rightsblue hover:after:w-full after:transition-all" href="#history">
+            Mass Transport
+          </a>
+<a class="font-saira text-lg tracking-wider text-white/90 hover:text-white font-semibold uppercase transition-colors relative py-1 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-rightsblue hover:after:w-full after:transition-all" href="#joinus">
+            Halalan 2022
+          </a>
+<a class="font-saira text-lg tracking-wider text-white/90 hover:text-white font-semibold uppercase transition-colors relative py-1 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-rightsblue hover:after:w-full after:transition-all" href="#nacto">
+            NACTO
+          </a>
+<a class="font-saira text-lg tracking-wider text-white/90 hover:text-white font-semibold uppercase transition-colors relative py-1 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-rightsblue hover:after:w-full after:transition-all" href="#contact">
+            Contact
+          </a>
+<!-- Search Field -->
+<div class="relative ml-2">
+<label class="sr-only" for="desktop-search">Search</label>
+<div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-white/60">
+<svg aria-hidden="true" class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+</svg>
+</div>
+<input class="bg-basebluedark/80 text-white placeholder-white/60 text-sm rounded-full pl-9 pr-4 py-1.5 focus:outline-none focus:ring-2 focus:ring-rightsblue focus:bg-basebluedark border border-white/20 transition-all w-44 xl:w-52" id="desktop-search" placeholder="Search campaign..." type="text"/>
+</div>
+</nav>
+<!-- Mobile Menu Toggle Button -->
+<div class="flex lg:hidden items-center">
+<button aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle Navigation Menu" class="p-2.5 rounded-lg text-white/90 hover:text-white hover:bg-basebluedark focus:outline-none focus:ring-2 focus:ring-rightsblue" id="mobile-menu-btn" type="button">
+<svg class="w-6 h-6 block" fill="none" id="hamburger-icon" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<svg class="w-6 h-6 hidden" fill="none" id="close-icon" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+</div>
+</div>
+</div>
+<!-- Mobile Dropdown Menu -->
+<div class="hidden lg:hidden bg-basebluedark border-t border-white/10 px-4 pt-3 pb-6 space-y-3" id="mobile-menu">
+<div class="relative my-2">
+<label class="sr-only" for="mobile-search">Search</label>
+<div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-white/60">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+</svg>
+</div>
+<input class="w-full bg-baseblue text-white placeholder-white/60 text-sm rounded-full pl-9 pr-4 py-2 border border-white/20 focus:outline-none focus:ring-2 focus:ring-rightsblue" id="mobile-search" placeholder="Search campaign..." type="text"/>
+</div>
+<div class="flex flex-col space-y-2 pt-2 border-t border-white/10">
+<a class="mobile-nav-link font-saira text-xl tracking-wider text-white hover:text-rightsblue font-semibold uppercase py-2 px-1" href="#billofrights">Commuter's Bill of Rights</a>
+<a class="mobile-nav-link font-saira text-xl tracking-wider text-white hover:text-rightsblue font-semibold uppercase py-2 px-1" href="#history">Mass Transport</a>
+<a class="mobile-nav-link font-saira text-xl tracking-wider text-white hover:text-rightsblue font-semibold uppercase py-2 px-1" href="#joinus">Halalan 2022</a>
+<a class="mobile-nav-link font-saira text-xl tracking-wider text-white hover:text-rightsblue font-semibold uppercase py-2 px-1" href="#nacto">NACTO</a>
+<a class="mobile-nav-link font-saira text-xl tracking-wider text-white hover:text-rightsblue font-semibold uppercase py-2 px-1" href="#contact">Contact</a>
+</div>
+</div>
+</header>
+<!-- ==================== 2. HERO SECTION ==================== -->
+<section class="relative min-h-[90vh] lg:min-h-screen flex items-center justify-center bg-basebluedark overflow-hidden" id="home">
+<!-- Hero Background Image with Overlay -->
+<div class="absolute inset-0 z-0"><img alt="Metro Manila Commuters and Street" class="w-full h-full object-cover object-center filter brightness-[0.9] contrast-[1.05]" src="https://res.cloudinary.com/kennmasing/image/upload/v1589305510/capstone1/homecover_xnerzl.png"/><div class="absolute inset-0 bg-basebluedark/50"></div><div class="absolute inset-0 bg-gradient-to-t from-basebluedark/90 via-transparent to-basebluedark/60"></div></div>
+<!-- Hero Content -->
+<div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-20 flex flex-col items-center">
+<h1 class="font-oswald text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-bold tracking-tight text-white uppercase leading-none drop-shadow-xl mb-4">
+        #COMMUTERSNAMAN
+      </h1>
+<p class="font-saira text-xl sm:text-2xl md:text-3xl text-white/95 uppercase letter-spacing-wide font-medium max-w-3xl drop-shadow-md mb-10">
+        JOIN THE CONVERSATION
+      </p>
+<div class="flex flex-col sm:flex-row gap-4 items-center">
+<a class="inline-flex items-center justify-center px-9 py-4 rounded-full text-base font-bold uppercase tracking-wider text-basebluedark bg-white hover:bg-rightsbluelight hover:shadow-2xl transition duration-300 shadow-lg transform hover:-translate-y-0.5 focus:ring-4 focus:ring-white/50" href="#contact">
+          Get in Touch &amp; Take Action
+          <svg class="w-5 h-5 ml-2 -mr-1" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+</svg>
+</a>
+<a class="inline-flex items-center justify-center px-8 py-4 rounded-full text-base font-semibold uppercase tracking-wider text-white border-2 border-white/60 hover:border-white hover:bg-white/10 transition duration-300" href="#billofrights">
+          Explore the Bill of Rights
+        </a>
+</div>
+</div>
+<!-- Scroll Indicator -->
+<a aria-label="Scroll down" class="absolute bottom-6 left-1/2 transform -translate-x-1/2 z-10 text-white/70 hover:text-white flex flex-col items-center gap-1 group transition-colors" href="#billofrights">
+<span class="text-xs tracking-widest uppercase font-saira">Scroll</span>
+<svg class="w-5 h-5 animate-bounce group-hover:text-rightsblue" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M19 14l-7 7m0 0l-7-7m7 7V3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</a>
+</section>
+<!-- ==================== 3. A COMMUTER'S BILL OF RIGHTS ==================== -->
+<section class="py-20 lg:py-28 bg-subtlebg border-b border-bordercolor relative" id="billofrights">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<!-- Section Header -->
+<div class="max-w-4xl mx-auto text-center mb-16">
+<div class="flex justify-center mb-6">
+<div class="p-3 bg-white rounded-2xl shadow-sm border border-bordercolor">
+<img alt="A Commuter's Bill of Rights Seal" class="h-20 w-auto object-contain" src="https://res.cloudinary.com/kennmasing/image/upload/v1589305389/capstone1/billofrightslogo_k1hiuv.png"/>
+</div>
+</div>
+<h2 class="font-oswald text-3xl sm:text-4xl lg:text-5xl font-bold uppercase tracking-tight text-baseblue mb-4">
+          A COMMUTER'S BILL OF RIGHTS
+        </h2>
+<div class="w-20 h-1 bg-rightsbluedark mx-auto mb-6 rounded-full"></div>
+<div class="bg-white p-6 sm:p-8 rounded-2xl shadow-sm border border-bordercolor text-left md:text-center">
+<p class="text-base sm:text-lg text-bodytext leading-relaxed font-normal">
+<span class="font-semibold text-baseblue italic">“The Magna Carta of Dignified Commuting”</span>. The proposed bill fights for the rights of the daily commuter defined as someone who travels from one point to another using a combination of transport modes other than private vehicles. Everyone is a pedestrian at some point in the day. We want a life in the Philippines where the streets are for people to walk on, bike, and have a chat with acquaintances we meet along the way.
+          </p>
+</div>
+</div>
+<!-- 5 Rights Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-14"><div class="bg-white rounded-2xl p-7 shadow-sm hover:shadow-md border border-bordercolor transition duration-300 flex flex-col justify-between group hover:border-rightsblue"><div><div class="w-16 h-16 rounded-xl bg-baseblue flex items-center justify-center p-3 mb-6 group-hover:scale-105 transition-transform shadow-sm"><img alt="Safety Icon - Bike Helmet" class="max-h-full max-w-full object-contain" src="https://res.cloudinary.com/kennmasing/image/upload/v1589305363/capstone1/bikehelmet_wzhm6t.png"/></div><h3 class="font-oswald text-2xl font-bold text-baseblue tracking-wide uppercase mb-3">SAFE</h3><p class="text-bodytext text-sm sm:text-base leading-relaxed">The safety of Filipino commuters and dedicated pedestrian infrastructure should be the top priority of the local transport authorities in Metro Manila.</p></div></div><div class="bg-white rounded-2xl p-7 shadow-sm hover:shadow-md border border-bordercolor transition duration-300 flex flex-col justify-between group hover:border-rightsblue"><div><div class="w-16 h-16 rounded-xl bg-baseblue flex items-center justify-center p-3 mb-6 group-hover:scale-105 transition-transform shadow-sm"><img alt="Reliability Icon - Clock" class="max-h-full max-w-full object-contain" src="https://res.cloudinary.com/kennmasing/image/upload/v1589305340/capstone1/reliable_ujuefh.png"/></div><h3 class="font-oswald text-2xl font-bold text-baseblue tracking-wide uppercase mb-3">RELIABLE</h3><p class="text-bodytext text-sm sm:text-base leading-relaxed">Public transport operators should be as easy as possible for travellers. Facilities that are able provide up-to-date travel information should be made accessible.</p></div></div><div class="bg-white rounded-2xl p-7 shadow-sm hover:shadow-md border border-bordercolor transition duration-300 flex flex-col justify-between group hover:border-rightsblue"><div><div class="w-16 h-16 rounded-xl bg-baseblue flex items-center justify-center p-3 mb-6 group-hover:scale-105 transition-transform shadow-sm"><img alt="Accessibility Icon" class="max-h-full max-w-full object-contain" src="https://res.cloudinary.com/kennmasing/image/upload/v1589305323/capstone1/accessible_b6lh0p.png"/></div><h3 class="font-oswald text-2xl font-bold text-baseblue tracking-wide uppercase mb-3">ACCESSIBLE</h3><p class="text-bodytext text-sm sm:text-base leading-relaxed">Public transport operators should be as easy as possible for travellers. Facilities that are able provide up-to-date travel information should be made accessible.</p></div></div><div class="bg-white rounded-2xl p-7 shadow-sm hover:shadow-md border border-bordercolor transition duration-300 flex flex-col justify-between group hover:border-rightsblue"><div><div class="w-16 h-16 rounded-xl bg-baseblue flex items-center justify-center p-3 mb-6 group-hover:scale-105 transition-transform shadow-sm"><img alt="Comfort Icon - Seat" class="max-h-full max-w-full object-contain" src="https://res.cloudinary.com/kennmasing/image/upload/v1589305323/capstone1/comfortable_ufuasa.png"/></div><h3 class="font-oswald text-2xl font-bold text-baseblue tracking-wide uppercase mb-3">COMFORTABLE</h3><p class="text-bodytext text-sm sm:text-base leading-relaxed">Recommendations to make rides more comfortable and less daunting for everyone, including families, seniors and wheelchair users.</p></div></div><div class="bg-white rounded-2xl p-7 shadow-sm hover:shadow-md border border-bordercolor transition duration-300 flex flex-col justify-between group hover:border-rightsblue md:col-span-2 lg:col-span-1"><div><div class="w-16 h-16 rounded-xl bg-baseblue flex items-center justify-center p-3 mb-6 group-hover:scale-105 transition-transform shadow-sm"><img alt="Sustainability Icon - Leaf" class="max-h-full max-w-full object-contain" src="https://res.cloudinary.com/kennmasing/image/upload/v1589305309/capstone1/environmentallysound_tyd3bs.png"/></div><h3 class="font-oswald text-2xl font-bold text-baseblue tracking-wide uppercase mb-3">SUSTAINABLE</h3><p class="text-bodytext text-sm sm:text-base leading-relaxed">Opt out of driving private vehicles and start encouraging Filipino commuters, from whichever walk-of-life, to take the public transport and have less carbon footprint.</p></div></div></div>
+<!-- Action Button -->
+<div class="text-center">
+<a class="inline-flex items-center justify-center px-8 py-4 rounded-full font-saira text-xl font-bold uppercase tracking-wider bg-baseblue text-white hover:bg-basebluedark transition shadow-md hover:shadow-lg" href="#contact">
+          Know more about A Commuter's Bill of Rights
+          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+</svg>
+</a>
+</div>
+</div>
+</section>
+<!-- ==================== 4. MANILA METRO RAIL NETWORK ==================== -->
+<section class="py-20 lg:py-28 bg-white border-b border-bordercolor" id="history">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<!-- Section Header -->
+<div class="text-center max-w-3xl mx-auto mb-16">
+<h2 class="font-oswald text-3xl sm:text-4xl lg:text-5xl font-bold uppercase tracking-tight text-baseblue mb-2">
+          MANILA METRO RAIL NETWORK
+        </h2>
+<p class="font-saira text-xl sm:text-2xl text-rightsbluedark font-semibold uppercase tracking-wider mb-4">
+          MANILA COMPREHENSIVE RAILWAY NETWORK
+        </p>
+<div class="w-20 h-1 bg-rightsbluedark mx-auto rounded-full"></div>
+</div>
+<!-- Main Layout: Rail Map + Lines -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start mb-16">
+<!-- Rail Map Column (Sticky on Desktop) -->
+<div class="lg:col-span-5 lg:sticky lg:top-28">
+<div class="bg-subtlebg p-4 sm:p-5 rounded-2xl border border-bordercolor shadow-sm">
+<div class="overflow-hidden rounded-xl bg-white border border-slate-200">
+<img alt="Comprehensive Metro Manila Railway Network Map" class="w-full h-auto object-contain hover:scale-105 transition-transform duration-500 cursor-zoom-in" loading="lazy" src="https://res.cloudinary.com/kennmasing/image/upload/v1589305049/capstone1/railnetwork_n36i54.jpg"/>
+</div>
+</div>
+</div>
+<!-- Lines Groups Column -->
+<div class="lg:col-span-7 space-y-10">
+<!-- EXISTING LINES -->
+<div><div class="flex items-center gap-3 mb-5 border-b border-bordercolor pb-3"><span class="w-3 h-3 rounded-full bg-emerald-500"></span><h3 class="font-oswald text-2xl font-bold uppercase text-baseblue tracking-wide">EXISTING LINES</h3></div><div class="grid grid-cols-1 sm:grid-cols-2 gap-4"><div class="bg-subtlebg rounded-xl p-4 border border-bordercolor flex items-center gap-4 transition hover:shadow-md hover:bg-white relative overflow-hidden group"><div class="absolute left-0 top-0 bottom-0 w-2.5 bg-orange-500"></div><div class="w-14 h-14 p-1.5 bg-white rounded-lg border border-slate-200 flex items-center justify-center flex-shrink-0 ml-2"><img alt="PNR Logo" class="max-h-full max-w-full object-contain" src="https://res.cloudinary.com/kennmasing/image/upload/v1589305098/capstone1/pnr_n5peao.png"/></div><div><h4 class="font-oswald text-xl font-bold text-baseblue uppercase">PNR</h4></div></div><div class="bg-subtlebg rounded-xl p-4 border border-bordercolor flex items-center gap-4 transition hover:shadow-md hover:bg-white relative overflow-hidden group"><div class="absolute left-0 top-0 bottom-0 w-2.5" style="background-color: #fff23b;"></div><div class="w-14 h-14 p-1.5 bg-white rounded-lg border border-slate-200 flex items-center justify-center flex-shrink-0 ml-2"><img alt="LRT-1 Logo" class="max-h-full max-w-full object-contain" src="https://res.cloudinary.com/kennmasing/image/upload/v1589305095/capstone1/lrt1_vf85gv.png"/></div><div><h4 class="font-oswald text-xl font-bold text-baseblue uppercase">LRT-1</h4></div></div><div class="bg-subtlebg rounded-xl p-4 border border-bordercolor flex items-center gap-4 transition hover:shadow-md hover:bg-white relative overflow-hidden group"><div class="absolute left-0 top-0 bottom-0 w-2.5" style="background-color: #924ac2;"></div><div class="w-14 h-14 p-1.5 bg-white rounded-lg border border-slate-200 flex items-center justify-center flex-shrink-0 ml-2"><img alt="LRT-2 Logo" class="max-h-full max-w-full object-contain" src="https://res.cloudinary.com/kennmasing/image/upload/v1589305097/capstone1/lrt2_ncvuf0.png"/></div><div><h4 class="font-oswald text-xl font-bold text-baseblue uppercase">LRT-2</h4></div></div><div class="bg-subtlebg rounded-xl p-4 border border-bordercolor flex items-center gap-4 transition hover:shadow-md hover:bg-white relative overflow-hidden group"><div class="absolute left-0 top-0 bottom-0 w-2.5" style="background-color: #3f94fc;"></div><div class="w-14 h-14 p-1.5 bg-white rounded-lg border border-slate-200 flex items-center justify-center flex-shrink-0 ml-2"><img alt="MRT-3 Logo" class="max-h-full max-w-full object-contain" src="https://res.cloudinary.com/kennmasing/image/upload/v1589305092/capstone1/mrt3_ksdivy.png"/></div><div><h4 class="font-oswald text-xl font-bold text-baseblue uppercase">MRT-3</h4></div></div></div></div>
+<!-- PROPOSED LINES -->
+<div><div class="flex items-center gap-3 mb-5 border-b border-bordercolor pb-3"><span class="w-3 h-3 rounded-full bg-rightsblue"></span><h3 class="font-oswald text-2xl font-bold uppercase text-baseblue tracking-wide">PROPOSED LINES</h3></div><div class="grid grid-cols-1 sm:grid-cols-2 gap-4"><div class="bg-subtlebg rounded-xl p-4 border border-bordercolor flex items-center gap-4 transition hover:shadow-md hover:bg-white relative overflow-hidden"><div class="absolute left-0 top-0 bottom-0 w-2.5" style="background-color: #fa66fa;"></div><div class="w-14 h-14 p-1.5 bg-white rounded-lg border border-slate-200 flex items-center justify-center flex-shrink-0 ml-2"><img alt="LINE 4 Logo" class="max-h-full max-w-full object-contain" src="https://res.cloudinary.com/kennmasing/image/upload/v1589305098/capstone1/mrt4_kph6bl.png"/></div><div><h4 class="font-oswald text-xl font-bold text-baseblue uppercase">LINE 4</h4></div></div><div class="bg-subtlebg rounded-xl p-4 border border-bordercolor flex items-center gap-4 transition hover:shadow-md hover:bg-white relative overflow-hidden"><div class="absolute left-0 top-0 bottom-0 w-2.5" style="background-color: #7acc54;"></div><div class="w-14 h-14 p-1.5 bg-white rounded-lg border border-slate-200 flex items-center justify-center flex-shrink-0 ml-2"><img alt="LINE 5 Logo" class="max-h-full max-w-full object-contain" src="https://res.cloudinary.com/kennmasing/image/upload/v1589305094/capstone1/mrt5_mqgt2m.png"/></div><div><h4 class="font-oswald text-xl font-bold text-baseblue uppercase">LINE 5</h4></div></div><div class="bg-subtlebg rounded-xl p-4 border border-bordercolor flex items-center gap-4 transition hover:shadow-md hover:bg-white relative overflow-hidden"><div class="absolute left-0 top-0 bottom-0 w-2.5" style="background-color: #eb9d31;"></div><div class="w-14 h-14 p-1.5 bg-white rounded-lg border border-slate-200 flex items-center justify-center flex-shrink-0 ml-2"><img alt="LINE 6 Logo" class="max-h-full max-w-full object-contain" src="https://res.cloudinary.com/kennmasing/image/upload/v1589305097/capstone1/mrt6_idfupu.png"/></div><div><h4 class="font-oswald text-xl font-bold text-baseblue uppercase">LINE 6</h4></div></div><div class="bg-subtlebg rounded-xl p-4 border border-bordercolor flex items-center gap-4 transition hover:shadow-md hover:bg-white relative overflow-hidden"><div class="absolute left-0 top-0 bottom-0 w-2.5" style="background-color: #963d27;"></div><div class="w-14 h-14 p-1.5 bg-white rounded-lg border border-slate-200 flex items-center justify-center flex-shrink-0 ml-2"><img alt="LINE 7 Logo" class="max-h-full max-w-full object-contain" src="https://res.cloudinary.com/kennmasing/image/upload/v1589305095/capstone1/mrt7_au9azo.png"/></div><div><h4 class="font-oswald text-xl font-bold text-baseblue uppercase">LINE 7</h4></div></div><div class="bg-subtlebg rounded-xl p-4 border border-bordercolor flex items-center gap-4 transition hover:shadow-md hover:bg-white relative overflow-hidden"><div class="absolute left-0 top-0 bottom-0 w-2.5" style="background-color: #754e1b;"></div><div class="w-14 h-14 p-1.5 bg-white rounded-lg border border-slate-200 flex items-center justify-center flex-shrink-0 ml-2"><img alt="LINE 8 Logo" class="max-h-full max-w-full object-contain" src="https://res.cloudinary.com/kennmasing/image/upload/v1589305100/capstone1/mrt8_fijo6a.png"/></div><div><h4 class="font-oswald text-xl font-bold text-baseblue uppercase">LINE 8</h4></div></div><div class="bg-subtlebg rounded-xl p-4 border border-bordercolor flex items-center gap-4 transition hover:shadow-md hover:bg-white relative overflow-hidden"><div class="absolute left-0 top-0 bottom-0 w-2.5" style="background-color: #db0000;"></div><div class="w-14 h-14 p-1.5 bg-white rounded-lg border border-slate-200 flex items-center justify-center flex-shrink-0 ml-2"><img alt="LINE 9 Logo" class="max-h-full max-w-full object-contain" src="https://res.cloudinary.com/kennmasing/image/upload/v1589305101/capstone1/mrt9_dqjyhb.png"/></div><div><h4 class="font-oswald text-xl font-bold text-baseblue uppercase">LINE 9</h4></div></div><div class="bg-subtlebg rounded-xl p-4 border border-bordercolor flex items-center gap-4 transition hover:shadow-md hover:bg-white relative overflow-hidden"><div class="absolute left-0 top-0 bottom-0 w-2.5" style="background-color: #126e3d;"></div><div class="w-14 h-14 p-1.5 bg-white rounded-lg border border-slate-200 flex items-center justify-center flex-shrink-0 ml-2"><img alt="PNR NORTH Logo" class="max-h-full max-w-full object-contain" src="https://res.cloudinary.com/kennmasing/image/upload/v1589305099/capstone1/pnr-north_xbkx0l.png"/></div><div><h4 class="font-oswald text-xl font-bold text-baseblue uppercase">PNR NORTH</h4></div></div><div class="bg-subtlebg rounded-xl p-4 border border-bordercolor flex items-center gap-4 transition hover:shadow-md hover:bg-white relative overflow-hidden"><div class="absolute left-0 top-0 bottom-0 w-2.5" style="background-color: #0c5b82;"></div><div class="w-14 h-14 p-1.5 bg-white rounded-lg border border-slate-200 flex items-center justify-center flex-shrink-0 ml-2"><img alt="PNR SOUTH Logo" class="max-h-full max-w-full object-contain" src="https://res.cloudinary.com/kennmasing/image/upload/v1589305100/capstone1/pnr-south_sjbrgk.png"/></div><div><h4 class="font-oswald text-xl font-bold text-baseblue uppercase">PNR SOUTH</h4></div></div></div></div>
+</div>
+</div>
+<!-- Action Button -->
+<div class="text-center pt-4">
+<a class="inline-flex items-center justify-center px-8 py-4 rounded-full font-saira text-xl font-bold uppercase tracking-wider bg-baseblue text-white hover:bg-basebluedark transition shadow-md hover:shadow-lg" href="#nacto">
+          Know more about the JICA Dream Plan
+          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+</svg>
+</a>
+</div>
+</div>
+</section>
+<!-- ==================== 5. HALALAN 2022 / JOIN US ==================== -->
+<section class="relative py-24 lg:py-32 bg-basebluedark overflow-hidden" id="joinus">
+<!-- Background Photo with Overlay -->
+<div class="absolute inset-0 z-0"><img alt="EDSA Traffic Congestion" class="w-full h-full object-cover object-center filter grayscale-[0.5] brightness-75" src="https://res.cloudinary.com/kennmasing/image/upload/v1589305564/capstone1/edsatraffic_c5exgh.jpg"/><div class="absolute inset-0 bg-basebluedark/50"></div><div class="absolute inset-0 bg-gradient-to-r from-basebluedark/90 via-baseblue/40 to-basebluedark/90"></div></div>
+<div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Left Column: Featured Article & Quote -->
+<div class="lg:col-span-7 text-white space-y-6"><h2 class="font-saira text-2xl sm:text-3xl text-rightsblue font-bold uppercase tracking-widest">FEATURED ARTICLE</h2><blockquote class="font-oswald text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight uppercase text-white border-l-4 border-rightsblue pl-6 py-2">“Every empty seat in a moving vehicle is a wasted resource.”</blockquote><div class="pt-4"><a class="inline-flex items-center justify-center px-8 py-3.5 rounded-full font-saira text-lg font-bold uppercase tracking-wider bg-rightsblue text-white hover:bg-rightsbluedark transition shadow-lg" href="#contact">READ MORE<svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg></a></div></div>
+<!-- Right Column: Halalan 2022 Fingerprint Card -->
+<div class="lg:col-span-5">
+<div class="bg-basebluedark/90 backdrop-blur-md rounded-3xl p-8 sm:p-10 border-2 border-white/20 shadow-2xl text-center flex flex-col items-center relative overflow-hidden group">
+<!-- Subtle glow circle in background -->
+<div class="absolute -top-24 -right-24 w-48 h-48 bg-rightsblue/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="w-24 h-24 sm:w-28 sm:h-28 mb-6 p-4 rounded-full bg-white/10 border border-white/20 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+<img alt="Voter Fingerprint Icon" class="max-h-full max-w-full object-contain filter drop-shadow" src="https://res.cloudinary.com/kennmasing/image/upload/v1589304996/capstone1/fingerprintwhite_wefl6b.png"/>
+</div>
+<div class="space-y-1 mb-6">
+<span class="font-oswald text-4xl sm:text-5xl font-bold tracking-tight text-white uppercase block">
+                HALALAN
+              </span>
+<span class="font-saira text-3xl sm:text-4xl text-rightsblue font-bold tracking-widest block letter-spacing-ultra">
+                2022
+              </span>
+</div>
+<a class="w-full py-4 px-6 rounded-full font-saira text-xl sm:text-2xl font-bold uppercase tracking-wider bg-white text-basebluedark hover:bg-rightsbluelight hover:shadow-xl transition-all duration-300 transform group-hover:-translate-y-0.5 shadow-lg" href="#contact">
+              MAGPA-REHISTRO, BUMOTO!
+            </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== 6. NACTO ==================== -->
+<section class="py-20 lg:py-28 bg-subtlebg border-b border-bordercolor" id="nacto">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<!-- Section Header -->
+<div class="max-w-3xl mx-auto text-center mb-16">
+<h2 class="font-oswald text-3xl sm:text-4xl lg:text-5xl font-bold uppercase tracking-tight text-baseblue mb-4">
+          DESIGNING TO MOVE PEOPLE
+        </h2>
+<div class="w-20 h-1 bg-rightsbluedark mx-auto mb-6 rounded-full"></div>
+<p class="text-base sm:text-lg text-bodytext leading-relaxed font-normal">
+          Transit streets are designed to move people, and should be evaluated in part by their ability to do so. Whether in dense urban cores, on conventional arterials, or along neighborhood spines, transit is the most spatially efficient mode.
+        </p>
+</div>
+<!-- 4 Comparison Cards with GIFs -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-6"><div class="bg-white rounded-2xl overflow-hidden border border-bordercolor shadow-sm hover:shadow-md transition flex flex-col group"><div class="h-48 bg-slate-100 flex items-center justify-center p-4 border-b border-bordercolor overflow-hidden"><img alt="Car Lane Movement Demonstration" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300" loading="lazy" src="https://res.cloudinary.com/kennmasing/image/upload/v1589304907/capstone1/nacto-car_t6wnpf.gif"/></div><div class="p-6 flex-1 flex flex-col justify-between"><div><h3 class="font-oswald text-2xl font-bold uppercase text-baseblue mb-2">CAR LANE</h3><div class="flex items-baseline gap-1 my-3"><span class="font-oswald text-3xl font-bold text-slate-700">1,600</span><span class="text-xs font-semibold text-slate-500 uppercase tracking-wide">people / hr</span></div><div class="w-full bg-slate-100 rounded-full h-2.5 overflow-hidden"><div class="bg-slate-400 h-2.5 rounded-full" style="width: 6.4%"></div></div></div></div></div><div class="bg-white rounded-2xl overflow-hidden border border-bordercolor shadow-sm hover:shadow-md transition flex flex-col group"><div class="h-48 bg-slate-100 flex items-center justify-center p-4 border-b border-bordercolor overflow-hidden"><img alt="Bike Lane Movement Demonstration" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300" loading="lazy" src="https://res.cloudinary.com/kennmasing/image/upload/v1589304906/capstone1/nacto-bike_ospf0e.gif"/></div><div class="p-6 flex-1 flex flex-col justify-between"><div><h3 class="font-oswald text-2xl font-bold uppercase text-baseblue mb-2">BIKE LANE</h3><div class="flex items-baseline gap-1 my-3"><span class="font-oswald text-3xl font-bold text-emerald-600">7,500</span><span class="text-xs font-semibold text-slate-500 uppercase tracking-wide">people / hr</span></div><div class="w-full bg-slate-100 rounded-full h-2.5 overflow-hidden"><div class="bg-emerald-500 h-2.5 rounded-full" style="width: 30%"></div></div></div></div></div><div class="bg-white rounded-2xl overflow-hidden border border-bordercolor shadow-sm hover:shadow-md transition flex flex-col group"><div class="h-48 bg-slate-100 flex items-center justify-center p-4 border-b border-bordercolor overflow-hidden"><img alt="Sidewalk Pedestrian Movement Demonstration" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300" loading="lazy" src="https://res.cloudinary.com/kennmasing/image/upload/v1589304928/capstone1/nacto-pedestrian_o8gaml.gif"/></div><div class="p-6 flex-1 flex flex-col justify-between"><div><h3 class="font-oswald text-2xl font-bold uppercase text-baseblue mb-2">SIDEWALK</h3><div class="flex items-baseline gap-1 my-3"><span class="font-oswald text-3xl font-bold text-rightsbluedark">9,000</span><span class="text-xs font-semibold text-slate-500 uppercase tracking-wide">people / hr</span></div><div class="w-full bg-slate-100 rounded-full h-2.5 overflow-hidden"><div class="bg-rightsbluedark h-2.5 rounded-full" style="width: 36%"></div></div></div></div></div><div class="bg-white rounded-2xl overflow-hidden border-2 border-rightsbluedark shadow-md hover:shadow-lg transition flex flex-col group relative"><div class="h-48 bg-slate-100 flex items-center justify-center p-4 border-b border-bordercolor overflow-hidden"><img alt="Dedicated Transitway Movement Demonstration" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300" loading="lazy" src="https://res.cloudinary.com/kennmasing/image/upload/v1589304884/capstone1/nacto-transit_r9f14m.gif"/></div><div class="p-6 flex-1 flex flex-col justify-between bg-rightsbluelight/20"><div><h3 class="font-oswald text-2xl font-bold uppercase text-baseblue mb-2">TRANSITWAY</h3><div class="flex items-baseline gap-1 my-3"><span class="font-oswald text-3xl sm:text-4xl font-bold text-baseblue">25,000</span><span class="text-xs font-semibold text-slate-500 uppercase tracking-wide">people / hr</span></div><div class="w-full bg-slate-200 rounded-full h-2.5 overflow-hidden"><div class="bg-baseblue h-2.5 rounded-full" style="width: 100%"></div></div></div></div></div></div>
+</div>
+</section>
+<!-- ==================== 7. CONTACT ==================== -->
+<section class="relative py-20 lg:py-28 bg-basebluedark overflow-hidden" id="contact">
+<!-- Contact Background Photo with Overlay -->
+<div class="absolute inset-0 z-0"><img alt="Urban Transit Background" class="w-full h-full object-cover object-center filter brightness-75" src="https://res.cloudinary.com/kennmasing/image/upload/v1589305801/capstone1/contacts-bg_z60djz.png"/><div class="absolute inset-0 bg-basebluedark/50"></div><div class="absolute inset-0 bg-gradient-to-b from-basebluedark/90 via-baseblue/40 to-basebluedark/90"></div></div>
+<div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Column A: Newsletter, Social, Enquiries -->
+<div class="lg:col-span-5 text-white flex flex-col justify-between space-y-10">
+<!-- Newsletter Block -->
+<div class="bg-white/10 backdrop-blur-md p-7 rounded-2xl border border-white/20">
+<h3 class="font-oswald text-2xl font-bold uppercase tracking-wide text-white mb-2">
+              SIGN-UP FOR OUR NEWSLETTER
+            </h3>
+<p class="text-white/80 text-sm mb-5">
+              Be updated on all our events.
+            </p>
+<form class="space-y-3" onsubmit="event.preventDefault(); alert('Demo only: Thank you for subscribing to AltMobility!');">
+<div>
+<label class="block text-xs font-semibold uppercase tracking-wider text-white/90 mb-1" for="newsletter-email">
+                  Email Address
+                </label>
+<div class="flex flex-col sm:flex-row gap-2">
+<input class="flex-1 bg-white/20 border border-white/30 rounded-full px-4 py-2.5 text-white placeholder-white/50 text-sm focus:outline-none focus:ring-2 focus:ring-rightsblue focus:bg-white/30" id="newsletter-email" placeholder="commuter@altmobility.ph" required="" type="email"/>
+<button class="px-6 py-2.5 rounded-full font-saira text-base font-bold uppercase tracking-wider bg-rightsblue hover:bg-rightsbluedark text-white transition shadow" type="submit">
+                    Submit
+                  </button>
+</div>
+</div>
+</form>
+</div>
+<!-- Social Media Block -->
+<div>
+<h3 class="font-oswald text-2xl font-bold uppercase tracking-wide text-white mb-4">
+              FOLLOW-US!
+            </h3>
+<div class="flex items-center space-x-3">
+<!-- Facebook -->
+<a aria-label="Follow AltMobility on Facebook" class="w-11 h-11 rounded-full bg-white/15 hover:bg-rightsblue border border-white/20 flex items-center justify-center text-white transition duration-200" href="#">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"></path></svg>
+</a>
+<!-- Twitter -->
+<a aria-label="Follow AltMobility on Twitter" class="w-11 h-11 rounded-full bg-white/15 hover:bg-rightsblue border border-white/20 flex items-center justify-center text-white transition duration-200" href="#">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.18 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"></path></svg>
+</a>
+<!-- Instagram -->
+<a aria-label="Follow AltMobility on Instagram" class="w-11 h-11 rounded-full bg-white/15 hover:bg-rightsblue border border-white/20 flex items-center justify-center text-white transition duration-200" href="#">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+</a>
+<!-- YouTube -->
+<a aria-label="Follow AltMobility on YouTube" class="w-11 h-11 rounded-full bg-white/15 hover:bg-rightsblue border border-white/20 flex items-center justify-center text-white transition duration-200" href="#">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg>
+</a>
+</div>
+</div>
+<!-- Enquiries Block -->
+<div class="pt-2 border-t border-white/15">
+<h3 class="font-oswald text-xl font-bold uppercase tracking-wide text-white mb-2">
+              ENQUIRIES
+            </h3>
+<p class="text-white/80 text-sm">
+              For Business Enquiries: 
+              <a class="text-rightsblue hover:underline font-semibold block mt-1" href="mailto:cd_bd@altmobility.com.ph">
+                cd_bd@altmobility.com.ph
+              </a>
+</p>
+</div>
+</div>
+<!-- Column B: Send Us A Message Form -->
+<div class="lg:col-span-7">
+<div class="bg-white rounded-3xl p-8 sm:p-10 shadow-2xl border border-white/20">
+<h3 class="font-oswald text-3xl font-bold uppercase tracking-wide text-baseblue mb-1">
+              SEND US A MESSAGE
+            </h3>
+<p class="text-bodytext text-sm mb-6">
+              We'd love to hear from you.
+            </p>
+<form class="space-y-4" onsubmit="event.preventDefault(); alert('Demo only: Message sent! AltMobility team will respond shortly.');">
+<!-- Name Input -->
+<div>
+<label class="block text-xs font-bold uppercase tracking-wider text-baseblue mb-1" for="contact-name">
+                  Name <span class="text-red-500">*</span>
+</label>
+<input class="w-full bg-slate-50 border border-bordercolor rounded-xl px-4 py-2.5 text-bodytext text-sm focus:outline-none focus:ring-2 focus:ring-rightsblue focus:bg-white transition" id="contact-name" placeholder="Juan Dela Cruz" required="" type="text"/>
+</div>
+<!-- Email Input -->
+<div>
+<label class="block text-xs font-bold uppercase tracking-wider text-baseblue mb-1" for="contact-email">
+                  Email <span class="text-red-500">*</span>
+</label>
+<input class="w-full bg-slate-50 border border-bordercolor rounded-xl px-4 py-2.5 text-bodytext text-sm focus:outline-none focus:ring-2 focus:ring-rightsblue focus:bg-white transition" id="contact-email" placeholder="juan@example.ph" required="" type="email"/>
+</div>
+<!-- Affiliation Select -->
+<div>
+<label class="block text-xs font-bold uppercase tracking-wider text-baseblue mb-1" for="contact-affiliation">
+                  Affiliation <span class="text-red-500">*</span>
+</label>
+<div class="relative">
+<select class="w-full bg-slate-50 border border-bordercolor rounded-xl px-4 py-2.5 text-bodytext text-sm focus:outline-none focus:ring-2 focus:ring-rightsblue focus:bg-white appearance-none transition" id="contact-affiliation" required="">
+<option disabled="" selected="" value="">Please select your affiliation</option>
+<option value="cso">Civil Society or non-government organization</option>
+<option value="government">Government</option>
+<option value="media">Media</option>
+<option value="private">Private sector enterprise/business</option>
+<option value="academic">Student/Academic/Research organization</option>
+<option value="multilateral">Multilateral organization or development agency</option>
+<option value="others">Others</option>
+</select>
+<div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-slate-500">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+</div>
+</div>
+<!-- Message Textarea -->
+<div>
+<label class="block text-xs font-bold uppercase tracking-wider text-baseblue mb-1" for="contact-message">
+                  Message <span class="text-red-500">*</span>
+</label>
+<textarea class="w-full bg-slate-50 border border-bordercolor rounded-xl px-4 py-2.5 text-bodytext text-sm focus:outline-none focus:ring-2 focus:ring-rightsblue focus:bg-white transition" id="contact-message" placeholder="Share your commute stories or collaborative ideas..." required="" rows="4"></textarea>
+</div>
+<!-- "I'm not a robot" Checkbox -->
+<div class="pt-1">
+<label class="inline-flex items-center gap-3 p-3 bg-slate-50 border border-bordercolor rounded-xl cursor-pointer hover:bg-slate-100 transition">
+<input class="w-5 h-5 text-rightsblue rounded border-slate-300 focus:ring-rightsblue" required="" type="checkbox"/>
+<span class="text-sm font-medium text-bodytext">I'm not a robot</span>
+<span class="ml-auto text-xs text-slate-400">reCAPTCHA</span>
+</label>
+</div>
+<!-- Send Button -->
+<div class="pt-2">
+<button class="w-full py-3.5 px-6 rounded-full font-saira text-xl font-bold uppercase tracking-wider bg-baseblue hover:bg-basebluedark text-white transition duration-200 shadow-md hover:shadow-lg" type="submit">
+                  Send Message
+                </button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== 8. FOOTER ==================== -->
+<footer class="bg-baseblue text-white border-t border-basebluedark pt-16 pb-12">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<!-- Top Section with Logo & CTA -->
+<div class="flex flex-col md:flex-row items-center justify-between pb-12 border-b border-white/15 gap-8">
+<div class="flex flex-col sm:flex-row items-center sm:items-start gap-5 text-center sm:text-left">
+<img alt="AltMobility Philippines Logo" class="h-12 w-auto object-contain" src="https://res.cloudinary.com/kennmasing/image/upload/v1589304754/capstone1/altmobility2_j1errk.png"/>
+<div>
+<span class="font-oswald text-xl uppercase font-bold tracking-wide block">AltMobility Philippines</span>
+<p class="font-saira text-base text-rightsblue font-semibold uppercase tracking-widest letter-spacing-wide">
+              JOIN THE CONVERSATION
+            </p>
+</div>
+</div>
+<div>
+<a class="inline-flex items-center justify-center px-8 py-3.5 rounded-full font-saira text-lg font-bold uppercase tracking-wider bg-white text-basebluedark hover:bg-rightsbluelight hover:shadow-lg transition" href="#contact">
+            Contribute
+            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M12 4v16m8-8H4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+</svg>
+</a>
+</div>
+</div>
+<!-- Links & Copyright -->
+<div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-6 text-xs text-white/70">
+<!-- Navigation Links -->
+<nav aria-label="Footer Quick Links" class="flex flex-wrap justify-center gap-x-6 gap-y-2 uppercase font-semibold tracking-wider font-saira text-sm">
+<a class="hover:text-white transition-colors" href="#home">A-Z SITE INDEX</a>
+<a class="hover:text-white transition-colors" href="#contact">CONTACT</a>
+<a class="hover:text-white transition-colors" href="#contact">COPYRIGHT</a>
+<a class="hover:text-white transition-colors" href="#contact">PRIVACY NOTICE</a>
+<a class="hover:text-white transition-colors" href="#contact">TERMS OF USE</a>
+</nav>
+<!-- Copyright -->
+<div class="text-center md:text-right font-medium">
+          © 2019 AltMobility Philippines | All rights reserved
+        </div>
+</div>
+</div>
+</footer>
+<!-- Vanilla JS for Responsive Mobile Menu & Smooth Interaction -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const menuBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const hamburgerIcon = document.getElementById('hamburger-icon');
+      const closeIcon = document.getElementById('close-icon');
+      const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+      if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener('click', function () {
+          const isExpanded = menuBtn.getAttribute('aria-expanded') === 'true';
+          menuBtn.setAttribute('aria-expanded', !isExpanded);
+          mobileMenu.classList.toggle('hidden');
+          hamburgerIcon.classList.toggle('hidden');
+          closeIcon.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when an anchor link is clicked
+        mobileNavLinks.forEach(link => {
+          link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            hamburgerIcon.classList.remove('hidden');
+            closeIcon.classList.add('hidden');
+            menuBtn.setAttribute('aria-expanded', 'false');
+          });
+        });
+      }
+    });
+  </script>
+</body>
+</html>

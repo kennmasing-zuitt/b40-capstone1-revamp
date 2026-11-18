@@ -1,0 +1,19 @@
+/* Custom styles come first, as in the Stitch page: Tailwind utilities on the same element win. */
+/* Custom scrollbar and accessibility focus styles */
+:focus-visible {
+  outline: 3px solid #72a1b4;
+  outline-offset: 2px;
+}
+.text-shadow-hero {
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+}
+.letter-spacing-wide {
+  letter-spacing: 0.22em;
+}
+.letter-spacing-ultra {
+  letter-spacing: 0.35em;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
