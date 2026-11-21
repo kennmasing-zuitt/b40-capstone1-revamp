@@ -1,0 +1,13 @@
+.git
+.github
+.gitignore
+.DS_Store
+.env
+node_modules
+*.md
+Dockerfile
+.dockerignore
+docs
+.stitch
+tailwind.config.js
+tailwind.input.css
